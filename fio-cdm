@@ -44,6 +44,7 @@ directory=${TARGET}
 # filename=.fio-diskmark
 
 [Seq-Read]
+name=Seq-Read
 bs=1m
 rw=read
 stonewall
