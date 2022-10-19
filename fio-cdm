@@ -4,7 +4,7 @@ TARGET="$1"
 
 fio2cdm() {
     awk '
-    {print $1}
+    /.*/                  {print $1}
     /^Seq-Read:/          {getline;if($1~/^read/) {seqread =$4}}
     /^Seq-Write:/         {getline;if($1~/^write/){seqwrite=$3}}
     /^Rand-Read-512K:/    {getline;if($1~/^read/) {rread512 =$4}}
