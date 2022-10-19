@@ -30,7 +30,7 @@ TrueNASの簡易動作チェックに使うためにフォークしました。
 curl -s https://raw.githubusercontent.com/tk-suzuki/fio-cdm4bsd/master/fio-cdm | sh /dev/stdin <path>
 
 # 短縮URLでも利用できます
-curl -s https://arpsrec.net/fio-cdm | sh /dev/stdin <path>
+curl -s https://g.arpsrec.net/fio-cdm | sh /dev/stdin <path>
 ```
 
 ### sample
