@@ -38,7 +38,7 @@ fio2cdm() {
 trap "rm -f ${TARGET}/.fio-diskmark" 0 1 2 3 9 15
 
 # see. http://www.winkey.jp/article.php/20110310142828679
-cat <<_EOL_ | fio -
+cat <<_EOL_ | fio - | fio2cdm
 [global]
 ioengine=posixaio
 iodepth=1
