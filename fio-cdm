@@ -50,7 +50,7 @@ cat <<_EOL_ | fio - | fio2cdm
 [global]
 ioengine=posixaio
 iodepth=1
-size=1G
+size=1M
 direct=1
 runtime=60
 directory=${TARGET}
