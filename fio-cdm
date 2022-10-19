@@ -26,14 +26,6 @@ fio2cdm() {
         return s;
     }
     END {
-        print (seqread);
-        print (rread512);
-        print (rread4);
-        print (rread4qd32);
-        print (seqwrite);
-        print (rwrite512);
-        print (rwrite4);
-        print (rwrite4qd32);
         print ("|      | Read(MB/s)|Write(MB/s)|");
         print ("|------|-----------|-----------|");
         printf("|  Seq |%11.3f|%11.3f|\n", n(seqread),   n(seqwrite));
